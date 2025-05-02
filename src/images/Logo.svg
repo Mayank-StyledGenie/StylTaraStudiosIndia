@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d8d2c2;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        font-family: PlayfairDisplayRoman-SemiBold, 'Playfair Display';
+        font-size: 66.67px;
+        font-variation-settings: 'wght' 600;
+        font-weight: 600;
+      }
+
+      .cls-4, .cls-5, .cls-3 {
+        fill: #401835;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: #88903c;
+      }
+
+      .cls-5 {
+        font-family: PlayfairDisplayRoman-ExtraBold, 'Playfair Display';
+        font-size: 170.6px;
+        font-variation-settings: 'wght' 800;
+        font-weight: 700;
+      }
+
+      .cls-8 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-9 {
+        letter-spacing: -.03em;
+      }
+    </style>
+  </defs>
+  <text class="cls-5" transform="translate(634.17 588.15)"><tspan x="0" y="0">St</tspan><tspan class="cls-8" x="161.9" y="0">y</tspan><tspan x="246.17" y="0">l</tspan><tspan class="cls-9" x="300.76" y="0">T</tspan><tspan class="cls-7" x="412.17" y="0">ar</tspan><tspan class="cls-6" x="582.42" y="0">a</tspan></text>
+  <text class="cls-4" transform="translate(870.67 653.93)"><tspan x="0" y="0">Studio</tspan></text>
+  <path class="cls-3" d="M622.55,539.5c-89.09,17.1-102.95,30.95-120.05,120.05-17.1-89.09-30.95-102.95-120.05-120.05,89.09-17.1,102.95-30.95,120.05-120.05,17.1,89.09,30.95,102.95,120.05,120.05Z"/>
+  <path class="cls-1" d="M590.74,539.5c-65.49,12.57-75.68,22.76-88.24,88.24-12.57-65.49-22.76-75.68-88.24-88.24,65.49-12.57,75.68-22.76,88.24-88.24,12.57,65.49,22.76,75.68,88.24,88.24Z"/>
+  <g>
+    <path class="cls-2" d="M503.17,503.22s-24.5,15.35-.84,36.07c0,0,24-15.85.84-36.07Z"/>
+    <path class="cls-2" d="M503.17,539.22s-24.5,15.35-.84,36.07c0,0,24-15.85.84-36.07Z"/>
+    <path class="cls-2" d="M537.67,539.78s-15.35-24.5-36.07-.84c0,0,15.85,24,36.07.84Z"/>
+    <path class="cls-2" d="M502.67,539.78s-15.35-24.5-36.07-.84c0,0,15.85,24,36.07.84Z"/>
+  </g>
+  <circle class="cls-1" cx="502.14" cy="539.25" r="4"/>
+</svg>
