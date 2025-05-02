@@ -633,8 +633,8 @@ const WeddingStylingConsultationForm = () => {
                 style={{backgroundColor: colors.secondary.chestnut}}
               />
               <div className="flex justify-between text-xs text-black mt-1">
-                <span>₹10,000</span>
-                <span>₹500,000</span>
+                <span>₹3,00,000</span>
+                <span>₹10,00,000</span>
               </div>
             </div>
 
