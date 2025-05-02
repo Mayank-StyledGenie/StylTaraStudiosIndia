@@ -15,8 +15,8 @@ import { usePathname } from 'next/navigation';
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const { data: session } = useSession();
-  {/*const isLoggedIn = !!session;*/}
+  {/*const { data: session } = useSession();
+  const isLoggedIn = !!session;*/}
   const pathname = usePathname();
 
   useEffect(() => {
