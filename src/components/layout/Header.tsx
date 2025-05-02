@@ -1,10 +1,10 @@
 "use client";
 import Link from 'next/link';
 import Image from 'next/image';
-import { CgBell } from "react-icons/cg";
+{/*import { CgBell } from "react-icons/cg";*/}
 import { HiMenu } from "react-icons/hi";
 import { IoMdClose } from "react-icons/io";
-import { FaUserCircle } from "react-icons/fa";
+{/*import { FaUserCircle } from "react-icons/fa";*/}
 import Container from '../ui/Container';
 import { useState, useEffect } from 'react';
 import { typography } from '@/styles/typography';
@@ -16,7 +16,7 @@ import { usePathname } from 'next/navigation';
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const { data: session } = useSession();
-  const isLoggedIn = !!session;
+  {/*const isLoggedIn = !!session;*/}
   const pathname = usePathname();
 
   useEffect(() => {
