@@ -15,30 +15,24 @@ interface ClientCardProps {
 
 const ClientCard = ({ name, title, description }: ClientCardProps) => {
     return (
-        <div className="rounded-2xl p-9 inset-shadow-sm shadow-xl h-110 flex flex-col mx-2 mb-5 relative overflow-hidden">
-            {/* Fixed height content area with overflow-y auto */}
-            <div className="flex-1 flex flex-col">
-                {/* Description with fixed height to ensure consistency */}
-                <div className="flex-1 overflow-y-auto mb-6">
-                    <p className={`${typography.body.B2} text-gray-800 text-sm leading-relaxed`}>
-                        {description}
-                    </p>
-                </div>
-                
-                {/* Name and title section with fixed positioning at bottom */}
-                <div className="mt-auto">
-                    <div className="flex justify-center gap-3">
-                        <div className="text-center">
-                            <h4 className={`${typography.body.B2} font-bold`}>{name}</h4>
-                            <p className={`${typography.body.B2} text-gray-500`}>{title}</p>
-                        </div>
-                    </div>
+        <div className="rounded-2xl p-9 inset-shadow-sm shadow-xl h-110 mx-2 mb-5 relative grid grid-rows-[1fr_auto]">
+            {/* Description area with auto overflow */}
+            <div className="overflow-y-auto">
+                <p className={`${typography.body.B2} text-gray-800 text-sm leading-relaxed`}>
+                    {description}
+                </p>
+            </div>
+            
+            {/* Fixed footer with name and title */}
+            <div className="pt-6">
+                <div className="text-center">
+                    <h4 className={`${typography.body.B2} font-bold`}>{name}</h4>
+                    <p className={`${typography.body.B2} text-gray-500`}>{title}</p>
                 </div>
             </div>
         </div>
     );
 };
-
 const NextArrow = ({ onClick }: { onClick?: () => void }) => (
     <button
         onClick={onClick}
