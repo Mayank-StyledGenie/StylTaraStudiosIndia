@@ -603,7 +603,7 @@ const PhotoshootStylingManagementForm = () => {
                 name="budgetRange"
                 min="50000"
                 max="1000000"
-                step="20000"
+                step="10000"
                 value={formData.budgetRange}
                 onChange={handleRangeChange}
                 className="mt-2 block w-full"
