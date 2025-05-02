@@ -15,16 +15,16 @@ interface ClientCardProps {
 
 const ClientCard = ({ name, title, description }: ClientCardProps) => {
     return (
-        <div className="rounded-2xl p-9 inset-shadow-sm shadow-xl h-110 mx-2 mb-5 relative grid grid-rows-[1fr_auto]">
-            {/* Description area with auto overflow */}
-            <div className="overflow-y-auto">
+        <div className="rounded-2xl p-9 inset-shadow-sm shadow-xl h-110 flex flex-col justify-between mx-2 mb-5 relative">
+            {/* Top section with description - fixed height with overflow handling */}
+            <div className="h-3/4 overflow-y-auto mb-6">
                 <p className={`${typography.body.B2} text-gray-800 text-sm leading-relaxed`}>
                     {description}
                 </p>
             </div>
             
-            {/* Fixed footer with name and title */}
-            <div className="pt-6">
+            {/* Bottom section with name and title - always stays at the bottom */}
+            <div className="h-1/4 flex items-end justify-center">
                 <div className="text-center">
                     <h4 className={`${typography.body.B2} font-bold`}>{name}</h4>
                     <p className={`${typography.body.B2} text-gray-500`}>{title}</p>
