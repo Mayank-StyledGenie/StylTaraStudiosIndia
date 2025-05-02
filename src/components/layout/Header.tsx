@@ -10,7 +10,7 @@ import { useState, useEffect } from 'react';
 import { typography } from '@/styles/typography';
 import Logo from '@/images/logo1.svg'; 
 import { colors } from '@/styles/colors';
-import { useSession } from 'next-auth/react';
+{/*import { useSession } from 'next-auth/react';*/}
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
