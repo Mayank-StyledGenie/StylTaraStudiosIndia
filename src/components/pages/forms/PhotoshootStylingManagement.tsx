@@ -601,16 +601,16 @@ const PhotoshootStylingManagementForm = () => {
                 type="range"
                 id="budgetRange"
                 name="budgetRange"
-                min="5000"
-                max="50000"
-                step="1000"
+                min="50000"
+                max="1000000"
+                step="20000"
                 value={formData.budgetRange}
                 onChange={handleRangeChange}
                 className="mt-2 block w-full"
               />
               <div className="flex justify-between text-xs text-gray-500 mt-1">
-                <span>₹5,000</span>
                 <span>₹50,000</span>
+                <span>₹10,00,000</span>
               </div>
             </div>
             
