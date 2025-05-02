@@ -46,8 +46,8 @@ const Header = () => {
   return (
     <header className={`py-4 border-b border-gray-200 z-999`} style={{ backgroundColor: colors.primary.bone }}> 
       <Container marginLeft="5vw" marginRight="5vw">
-        <div className="flex items-center justify-between h-14"> 
-          <div className="flex items-center">
+        <div className="flex items-center justify-between h-14 relative"> 
+          <div className="flex items-center z-10">
             <button 
               className="md:hidden mr-4 black" 
               onClick={(e) => {
@@ -72,7 +72,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <nav className={`${typography.body.base} hidden md:flex items-center space-x-8`}>
+          <nav className={`${typography.body.base} hidden md:flex items-center justify-center absolute left-0 right-0 mx-auto space-x-8`}>
             <Link 
               href="/#services" 
               className={`${pathname.includes("/services") ? "font-bold" : ""} black hover:text-black`}
@@ -93,6 +93,14 @@ const Header = () => {
             </Link>
           </nav>
 
+          {/* Placeholder div to maintain the layout structure */}
+          <div className="flex items-center invisible">
+            <button className="md:hidden mr-4 black">
+              <HiMenu className="w-6 h-6" />
+            </button>
+            <div className="h-12 w-[70px]"></div>
+          </div>
+          
           {/* <div className="flex items-center space-x-4">
             {isLoggedIn ? (
               <>
