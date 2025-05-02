@@ -1,0 +1,5 @@
+README.md	     node_modules	    public
+ecosystem.config.js  package-lock.json	    src
+eslint.config.mjs    package.json	    tailwind.config.js
+next-env.d.ts	     postcss.config.mjs     tsconfig.json
+next.config.ts	     project_structure.txt
