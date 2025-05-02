@@ -9,6 +9,7 @@ import Preety from '@/images/Aboutus/Preety.jpeg';
 import Akash from '@/images/Aboutus/Akash.png';
 import Ishwari from '@/images/Aboutus/Ishwari.jpg';
 import Mayank from '@/images/Aboutus/Mayank.jpeg';
+import Muskan from '@/images/Aboutus/Muskan.jpeg';
 
 interface TeamMember {
   id: number;
@@ -55,6 +56,14 @@ const TeamSection: React.FC = () => {
     },
     {
       id: 5,
+      name: "Muskan Sharma ",
+      title: "Fashion Stylist and Content Creator",
+      bio: "Muskan Sharma brings fresh creativity and a keen eye for style to Styltara Studios Pvt Ltd as our Fashion Stylist and Content Creator. With a passion for blending tradition with modern trends, she curates distinctive looks and engaging content that resonate with our diverse clientele. Muskan plays a key role in styling projects, social media storytelling, and bringing the Styltara vision to life through fashion and digital creativity.",
+      image: Muskan.src,
+      linkedIn: "https://www.linkedin.com/in/muskan-sharma-10473218a/"
+    },
+    {
+      id: 6,
       name: "Mayank Tanwar",
       title: "Software Engineer",
       bio: "Mayank believes great software is about strength and scalability. A skilled Software Engineer with expertise in building high-performance applications, he focuses on developing robust solutions and ensuring systems run seamlessly across platforms. His work drives innovation and enhances the efficiency of every project he contributes to.",
