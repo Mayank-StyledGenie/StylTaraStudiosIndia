@@ -15,7 +15,7 @@ interface ClientCardProps {
 
 const ClientCard = ({ name, title, description }: ClientCardProps) => {
     return (
-        <div className="rounded-2xl p-9 inset-shadow-sm shadow-xl h-125 flex flex-col justify-between mx-2 mb-5 relative">
+        <div className="rounded-2xl p-9 inset-shadow-sm shadow-xl h-135 flex flex-col justify-between mx-2 mb-5 relative">
             {/* Top section with description - fixed height with overflow handling */}
             <div className="h-3/4  mb-6">
                 <p className={`${typography.body.B2} text-gray-800 text-sm leading-relaxed`}>
