@@ -93,7 +93,7 @@ const Header = () => {
             </Link>
           </nav>
 
-          <div className="flex items-center space-x-4">
+          {/* <div className="flex items-center space-x-4">
             {isLoggedIn ? (
               <>
                 <Link href="/notifications" className="text-gray-700 hover:text-black">
@@ -114,7 +114,7 @@ const Header = () => {
                 <p className={`${typography.body.B3}`}> Login/ Sign up</p> 
               </Link>
             )}
-          </div>
+          </div>*/}
         </div>
       </Container>
 
