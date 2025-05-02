@@ -14,7 +14,7 @@ const ApplyBanner: React.FC = () => {
           Be Part Of Our Dynamic &<br className="hidden md:block" /> Creative Team
         </h2>
         
-        <Link href="/careers/freelance">
+        <Link href="/Freelance">
           <Button className={`text-black bg-[#D8D2C2] py-3 px-8 rounded-md transition-colors font-medium text-lg`} style={{backgroundColor: colors.primary.bone}} variant='secondary'>
             <strong>Join Now</strong>
           </Button>
