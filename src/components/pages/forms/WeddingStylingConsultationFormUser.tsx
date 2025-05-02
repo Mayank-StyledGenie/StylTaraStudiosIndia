@@ -626,7 +626,7 @@ const WeddingStylingConsultationForm = () => {
                 name="budgetRange"
                 min="300000"
                 max="1000000"
-                step="25000"
+                step="10000"
                 value={formData.budgetRange}
                 onChange={handleRangeChange}
                 className="mt-2 block w-full"
