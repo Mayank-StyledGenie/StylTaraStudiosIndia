@@ -126,8 +126,8 @@ const TeamSection: React.FC = () => {
         Our Team<br className="hidden md:block" />
       </h2>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {teamMembers.filter(member => member.id >= 3 && member.id <= 5).map((member) => (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        {teamMembers.filter(member => member.id >= 3 && member.id <= 6).map((member) => (
           <div 
             key={member.id} 
             className="bg-gray-50 rounded-lg overflow-hidden shadow-sm flex flex-col h-full"
