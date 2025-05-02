@@ -158,7 +158,7 @@ const Header = () => {
           >
             About
           </Link>
-          <div className="px-4 pt-4">
+          {/*<div className="px-4 pt-4">
             {isLoggedIn ? (
               <div className="flex justify-around">
                 <Link 
@@ -186,7 +186,7 @@ const Header = () => {
                 Login / Sign up
               </Link>
             )}
-          </div>
+          </div>*/}
         </nav>
       </aside>
       
