@@ -595,7 +595,7 @@ const PhotoshootStylingManagementForm = () => {
             
             <div className="col-span-1 md:col-span-2">
               <label htmlFor="budgetRange" className="block text-sm font-medium text-gray-700">
-                Budget range (optional): ?{formData.budgetRange}
+                Budget range (optional): ₹{formData.budgetRange}
               </label>
               <input
                 type="range"
@@ -609,8 +609,8 @@ const PhotoshootStylingManagementForm = () => {
                 className="mt-2 block w-full"
               />
               <div className="flex justify-between text-xs text-gray-500 mt-1">
-                <span>?5,000</span>
-                <span>?50,000</span>
+                <span>₹5,000</span>
+                <span>₹50,000</span>
               </div>
             </div>
             
