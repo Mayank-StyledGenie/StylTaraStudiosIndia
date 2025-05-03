@@ -2,6 +2,7 @@
 
 import { Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
+import Auth from '@/components/pages/Auth';
 
 // Component that uses useSearchParams
 function AuthContent() {
@@ -11,9 +12,8 @@ function AuthContent() {
   
   return (
     <div>
-      <h1>Authentication Page</h1>
       {code && <p>Authorization code: {code}</p>}
-      {/* Your auth UI components here */}
+      <Auth/>
     </div>
   );
 }
