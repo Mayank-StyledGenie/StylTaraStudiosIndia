@@ -461,7 +461,7 @@ const StylingConsultationForm = () => {
               />
             </div>
             
-            {formData.consultationMode === 'Offline' && (
+            {formData.consultationMode === 'In-person' && (
               <div className="col-span-1">
                 <label htmlFor="location" className="block text-sm font-medium text-gray-700">
                   Location (if offline) <span className="text-red-500">*</span>
