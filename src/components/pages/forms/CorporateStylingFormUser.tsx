@@ -87,7 +87,7 @@ const CorporateStylingForm = () => {
     'FMCG',
     'Other'
   ];
-  const locationOptions = ['Mumbai', 'Pune', 'Jaipur', 'Delhi', 'Other'];
+  const locationOptions = ['Mumbai', 'Pune', 'Jaipur', 'Delhi'];
   const serviceModeOptions = ['Online', 'On-site'];
 
   // Combined handleChange function that handles both normal and date inputs
