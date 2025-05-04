@@ -241,9 +241,13 @@ const StylingConsultationForm = () => {
     
     const fields: (keyof FormData)[] = [
       'fullName', 'email', 'phone', 'consultationMode',
-      'ageGroup', 'gender', 'location', 'stylingGoals',
+      'ageGroup', 'gender', 'stylingGoals',
       'preferredDateTime'
     ];
+
+    if (formData.consultationMode === 'Offline') {
+      fields.push('location');
+    }
     
     fields.forEach(field => {
       const valid = validateField(field, formData[field]);
@@ -457,30 +461,32 @@ const StylingConsultationForm = () => {
               />
             </div>
             
-            <div className="col-span-1">
-              <label htmlFor="location" className="block text-sm font-medium text-gray-700">
-                City & Country <span className="text-red-500">*</span>
-              </label>
-              <select
-                id="location"
-                name="location"
-                value={formData.location}
-                onChange={handleChange}
-                className={`mt-1 block w-full rounded-md border ${
-                  errors.location ? 'border-red-300 ring-red-500' : 'border-gray-300'
-                } px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-rose-500`}
-              >
-                <option value="">Select your city</option>
-                {locationOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-              {errors.location && (
-                <p className="mt-1 text-sm text-red-600">{errors.location}</p>
-              )}
-            </div>
+            {formData.consultationMode === 'Offline' && (
+              <div className="col-span-1">
+                <label htmlFor="location" className="block text-sm font-medium text-gray-700">
+                  Location (if offline) <span className="text-red-500">*</span>
+                </label>
+                <select
+                  id="trainingLocation"
+                  name="trainingLocation"
+                  value={formData.location}
+                  onChange={handleChange}
+                  className={`mt-1 block w-full rounded-md border ${
+                    errors.location ? 'border-red-300 ring-red-500' : 'border-gray-300'
+                  } px-3 py-2 shadow-sm focus:border-rose-500 focus:outline-none focus:ring-rose-500`}
+                >
+                  <option value="">Select location</option>
+                  {locationOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
+                {errors.location && (
+                  <p className="mt-1 text-sm text-red-600">{errors.location}</p>
+                )}
+              </div>
+            )}
             
             <div className="col-span-1 md:col-span-2">
               <label htmlFor="stylingGoals" className="block text-sm font-medium text-gray-700 mb-2">
