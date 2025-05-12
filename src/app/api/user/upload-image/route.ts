@@ -2,12 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getServerSession } from 'next-auth/next';
 import { connectToDatabase } from '@/lib/mongodb';
 import { authOptions } from '@/app/api/auth/[...nextauth]/options';
-import { uploadToStorage } from '@/lib/storage'; 
+import { uploadToStorage } from '@/lib/storage';
 
 export async function POST(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
-
     if (!session?.user) {
       return NextResponse.json(
         { message: 'Authentication required' },
@@ -15,10 +14,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Use formData to handle file upload
     const formData = await req.formData();
     const file = formData.get('profileImage') as File;
-
     if (!file) {
       return NextResponse.json(
         { message: 'No image file provided' },
@@ -26,8 +23,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Upload file to storage (you'll need to implement this)
-    // This could be to a local directory, AWS S3, or similar service
     if (!session.user.email) {
       return NextResponse.json(
         { message: 'User email is required' },
@@ -36,17 +31,16 @@ export async function POST(req: NextRequest) {
     }
     
     const imageUrl = await uploadToStorage(file, session.user.email);
-
+    
     const { db } = await connectToDatabase();
     
-    // Update user profile with new image URL
     const result = await db.collection('users').updateOne(
       { email: session.user.email },
       { 
-        $set: { 
+        $set: {
           image: imageUrl,
           updatedAt: new Date()
-        } 
+        }
       }
     );
 
