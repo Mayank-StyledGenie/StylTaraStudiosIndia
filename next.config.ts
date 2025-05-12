@@ -7,23 +7,20 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.codewithfaraz.com',
-        pathname: '/tools/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com',
-        pathname: '/**',
+        hostname: '**',
       },
     ],
-    domains: ['www.styltarastudios.com'], // Add your domain
+    
+    unoptimized: true,
+
+    domains: ['www.styltarastudios.com'], 
   },
-  // No basePath or assetPrefix needed for standard deployment
   
-  // Remove the experimental.appDir section - it's no longer needed in Next.js 15+
   
-  // Add production-specific settings
-  output: 'standalone', // This creates a more optimized production build
+  output: 'standalone', 
+  webpack: (config, { isServer }) => {
+    return config;
+  },
 };
 
 export default nextConfig;
